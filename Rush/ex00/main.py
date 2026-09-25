@@ -1,7 +1,7 @@
 from checkmate import checkmate
 
 def main():
-    # ตัวอย่างที่ 1: King ถูก Rook โจมตี
+    # ตัวอย่างที่ 1: King ถูก pawn โจมตี
     print("--- Test Case 1 ---")
     board1 = """\
 R...
@@ -27,7 +27,7 @@ Q...
 .R..
 ..K.
 ...."""
-    checkmate(board3) # คาดหวัง: Success (Queen โจมตีได้)
+    checkmate(board3) # คาดหวัง: Fail 
 
     # ตัวอย่างที่ 4: King ถูก Bishop โจมตี
     print("\n--- Test Case 4 ---")
