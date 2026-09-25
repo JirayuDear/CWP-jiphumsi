@@ -34,7 +34,7 @@ def checkmate(board_str):
         r, c = kr + dr, kc + dc
         while is_valid_pos(board_size, r, c):
             piece = rows[r][c]
-            if piece != '.':
+            if piece in "PBRQK":
                 is_diagonal = i >= 4
                 if is_diagonal:
                     if piece in 'BQ':
